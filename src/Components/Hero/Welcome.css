@@ -1,0 +1,17 @@
+/* Welcome.css */
+
+.wlcmain {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically */
+    min-height: 80vh;         /* takes 80% of screen height */
+    background-color: #f9f9f9; /* light background, optional */
+    
+}
+
+.wlcmimg {
+    max-width: 100%;   /* makes image responsive */
+    height: 100px;
+    border-radius: 10px; /* optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* soft shadow */
+}
