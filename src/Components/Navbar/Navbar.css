@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px; /* Top-bottom 10px, left-right 50px */
-    background-color:rgba(34, 76, 116, 0.988); /* light background */
+    background-color:hsla(210, 17%, 93%, 0.988); /* light background */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     /* position: fixed; */
 }
@@ -32,7 +32,7 @@
 }
 
 .Allbuttons button:hover {
-    background-color:white;
+    background-color:rgb(94, 207, 230);
     color: black;
 }
 

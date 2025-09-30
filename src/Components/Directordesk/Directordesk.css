@@ -1,0 +1,37 @@
+/* Directordesk.css */
+
+.directormain {
+    display: flex;
+    justify-content: space-between; /* keeps text left and image right */
+    align-items: center;            /* vertically align */
+    gap: 30px;                      /* space between text and image */
+    padding: 40px 60px;             /* inner spacing */
+    background-color: #49588c;      /* light background */
+}
+
+.dirctormsg {
+    flex: 1;   /* text takes remaining space */
+    font-size: 22px;
+    line-height: 1.6;
+    color: white;
+}
+
+.dirctormsg h3 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: white; /* highlight heading */
+}
+
+.directorimg {
+    flex: 1;          /* image takes equal space */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.directorimg img {
+    /* max-width: 350px;  control image size */
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(13, 1, 1, 0.2);
+}

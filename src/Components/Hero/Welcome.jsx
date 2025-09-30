@@ -1,12 +1,22 @@
-import wlcmimg from "../../assets/wlcmimg.png";
-function Welcome (){
-    return (
-        <>
-        <div className="wlcmain">
-            <img className="wlcmimg" src={wlcmimg} alt="" />
+import welcomevdo from "../../assets/welcomevdo.mp4";
+import './Welcome.css';
 
-        </div>
-        </>
-    )
+function Welcome() {
+  return (
+    <>
+      <div className="wlcmain">
+        <video
+          className="wlcmvdo"
+          src={welcomevdo}
+          autoPlay
+          muted
+          loop
+          controls
+          width="100%"
+        />
+      </div>
+    </>
+  );
 }
+
 export default Welcome;

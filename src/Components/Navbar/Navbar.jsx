@@ -11,6 +11,7 @@ function Navbar() {
                 </div>
                 <div className="Allbuttons">
                     <button>Home</button>
+                    <button>Director's Desk</button>
                     <button>AboutUs</button>
                     <button>Courses</button>
                     <button>Events</button>
