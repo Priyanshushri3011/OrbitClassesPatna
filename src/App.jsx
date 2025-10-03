@@ -5,6 +5,9 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Welcome from './Components/Hero/Welcome'
 import Directordesk from './Components/Directordesk/Directordesk'
+import Mddesk from './Components/ManagingDirdesk/Mddesk'
+import VideoGallery from './Components/VideoGallery/VideoGallery'
+import CourseSection from './Components/CourseSection/CourseSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +17,10 @@ function App() {
    <Navbar/>
    <Welcome/>
    <Directordesk/>
+   <Mddesk/>
+   <VideoGallery/>
+   <CourseSection/>
+   
    </>
   )
 }
