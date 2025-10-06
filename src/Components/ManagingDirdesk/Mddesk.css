@@ -6,7 +6,7 @@
     align-items: center;            /* vertically align */
     gap: 30px;                      /* space between text and image */
     padding: 40px 60px;             /* inner spacing */
-    background-color: #b8c1e0;      /* light background */
+    background-color:lightgoldenrodyellow;      /* light background */
 }
 
 .Mdmsg {

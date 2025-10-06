@@ -8,6 +8,11 @@ import Directordesk from './Components/Directordesk/Directordesk'
 import Mddesk from './Components/ManagingDirdesk/Mddesk'
 import VideoGallery from './Components/VideoGallery/VideoGallery'
 import CourseSection from './Components/CourseSection/CourseSection'
+import WhyOrbitClasses from './Components/WhyOrbit/WhyOrbitClasses'
+import StudentFeedback from './Components/StudentFeedback/StudentFeedback'
+import ContactUs from './Components/Contactus/Contactus'
+import Footer from './Components/Footer/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +24,11 @@ function App() {
    <Directordesk/>
    <Mddesk/>
    <VideoGallery/>
+   <WhyOrbitClasses/>
+   <StudentFeedback/>
    <CourseSection/>
+   <ContactUs/>
+   <Footer/>
    
    </>
   )
