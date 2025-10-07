@@ -12,6 +12,7 @@ import WhyOrbitClasses from './Components/WhyOrbit/WhyOrbitClasses'
 import StudentFeedback from './Components/StudentFeedback/StudentFeedback'
 import ContactUs from './Components/Contactus/Contactus'
 import Footer from './Components/Footer/Footer'
+import AboutUs from './Components/Aboutus/Aboutus'
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
    <>
    <Navbar/>
    <Welcome/>
-   <Directordesk/>
-   <Mddesk/>
+   <AboutUs/>
+   {/* <Directordesk/> */}
+   {/* <Mddesk/> */}
    <VideoGallery/>
    <WhyOrbitClasses/>
    <StudentFeedback/>
