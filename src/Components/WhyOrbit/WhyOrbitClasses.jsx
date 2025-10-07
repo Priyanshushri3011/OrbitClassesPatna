@@ -1,9 +1,6 @@
 import React from "react";
 import "./WhyOrbitClasses.css";
-// import facultyIcon from "./icons/faculty.png";
-// import dataIcon from "./icons/data.png";
-// import learningIcon from "./icons/learning.png";
-// import examIcon from "./icons/exam.png";
+
 
 function WhyOrbitClasses() {
   const features = [

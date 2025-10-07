@@ -30,13 +30,13 @@ function StudentFeedback() {
       rating: 5,
       img: student1,
     },
-    // {
-    //   name: "Rohit Verma",
-    //   comment:
-    //     "Data-driven insights and weekly tests really helped me improve step-by-step. Highly recommended!",
-    //   rating: 4,
-    //   img: student1,
-    // },
+    {
+      name: "Rohit Verma",
+      comment:
+        "Data-driven insights and weekly tests really helped me improve step-by-step. Highly recommended!",
+      rating: 4,
+      img: student1,
+    },
   ];
 
   return (

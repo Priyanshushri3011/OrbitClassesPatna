@@ -1,17 +1,91 @@
-/* Welcome.css */
-
-.wlcmain {
-    display: flex;
-    justify-content: center;  /* centers horizontally */
-    align-items: center;      /* centers vertically */
-    min-height: 80vh;         /* takes 80% of screen height */
-    background-color: #f9f9f9; /* light background, optional */
-    
+/* ====== Welcome Section with Background ====== */
+.welcome-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
 }
 
-.wlcmimg {
-    max-width: 100%;   /* makes image responsive */
-    height: 100px;
-    border-radius: 10px; /* optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* soft shadow */
+/* Dark overlay for transparency effect */
+.overlay {
+  background-color: rgba(227, 185, 185, 0.55);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 60px 40px;
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 700px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-btn {
+  padding: 15px 35px;
+  background-color: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.welcome-btn:hover {
+  background-color: #e4580f;
+  transform: scale(1.05);
+}
+
+/* ====== Responsive Design ====== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .welcome-content h1 {
+    font-size: 2.5rem;
+  }
+  .welcome-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .overlay {
+    padding: 40px 20px;
+  }
+
+  .welcome-content h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-content p {
+    font-size: 0.95rem;
+  }
+
+  .welcome-btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
 }

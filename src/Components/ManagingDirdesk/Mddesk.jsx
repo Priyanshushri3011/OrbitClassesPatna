@@ -1,4 +1,4 @@
-import Directorimg from "../../assets/Directorimg.png"
+import ManagingDir from "../../assets/ManagingDir.png"
 import './Mddesk.css';
 function Mddesk() {
     return (
@@ -17,7 +17,7 @@ function Mddesk() {
 
                 </div>
                 <div className="Mdimg">
-                    <img src={Directorimg} alt="" />
+                    <img src={ManagingDir} alt="" />
 
                 </div>
             </div>

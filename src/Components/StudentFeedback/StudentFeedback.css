@@ -1,76 +1,158 @@
+/* ====== Feedback Section ====== */
 .feedback-section {
+  padding: 80px 60px;
+  background-color: #f8fafc;
   text-align: center;
-  padding: 60px 20px;
-  background-color: lightyellow;
 }
 
 .feedback-section h2 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  color: #1e3a8a;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.feedback-section h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #f97316;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
 .feedback-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 50px;
 }
 
+/* ====== Feedback Grid ====== */
 .feedback-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 
+/* ====== Individual Feedback Card ====== */
 .feedback-card {
-  background-color: #22d39a;
-  color: #000;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 25px 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
   text-align: center;
 }
 
 .feedback-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.feedback-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 15px;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
+/* ====== Student Image ====== */
 .feedback-image img {
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-}
-
-.feedback-stars {
-  color: #ffd700;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.feedback-comment {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #111;
-  font-style: italic;
   margin-bottom: 15px;
+  border: 3px solid #f97316;
+}
+
+/* ====== Stars ====== */
+.feedback-stars {
+  color: #f97316;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* ====== Comment & Name ====== */
+.feedback-comment {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .feedback-name {
+  font-size: 1rem;
+  color: #1e3a8a;
   font-weight: 600;
-  color: #0b0b0b;
+}
+
+/* ====== Responsive Design ====== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .feedback-section {
+    padding: 60px 40px;
+  }
+
+  .feedback-section h2 {
+    font-size: 2rem;
+  }
+
+  .feedback-section p {
+    font-size: 0.95rem;
+  }
+
+  .feedback-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .feedback-card {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .feedback-image img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .feedback-section {
+    padding: 40px 20px;
+  }
+
+  .feedback-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .feedback-section p {
+    font-size: 0.9rem;
+  }
+
+  .feedback-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feedback-card {
+    padding: 20px 15px;
+  }
+
+  .feedback-image img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feedback-stars {
+    font-size: 1rem;
+  }
+
+  .feedback-comment {
+    font-size: 0.9rem;
+  }
+
+  .feedback-name {
+    font-size: 0.95rem;
+  }
 }

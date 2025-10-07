@@ -1,37 +1,122 @@
-/* Directordesk.css */
-
+/* ====== Main Container ====== */
 .Mdmain {
-    display: flex;
-    justify-content: space-between; /* keeps text left and image right */
-    align-items: center;            /* vertically align */
-    gap: 30px;                      /* space between text and image */
-    padding: 40px 60px;             /* inner spacing */
-    background-color:lightgoldenrodyellow;      /* light background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #f8fafc;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
+/* ====== Text Section ====== */
 .Mdmsg {
-    flex: 1;   /* text takes remaining space */
-    font-size: 22px;
-    line-height: 1.6;
-    color: black;
+  flex: 1;
+  min-width: 300px;
 }
 
 .Mdmsg h3 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    color: black; /* highlight heading */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
 }
 
+.Mdmsg h3::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #1e3a8a;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.Mdmsg p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ====== Image Section ====== */
 .Mdimg {
-    flex: 1;          /* image takes equal space */
-    display: flex;
-    justify-content: flex-end;
+  flex: 0.8;
+  min-width: 250px;
+  text-align: center;
 }
 
 .Mdimg img {
-    /* max-width: 350px;  control image size */
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(13, 1, 1, 0.2);
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Mdimg img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ====== Responsive Design ====== */
+
+/* ----- Tablets (≤ 992px) ----- */
+@media (max-width: 992px) {
+  .Mdmain {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    gap: 50px;
+  }
+
+  .Mdmsg {
+    max-width: 700px;
+  }
+
+  .Mdmsg h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .Mdmsg p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .Mdimg img {
+    max-width: 300px;
+  }
+}
+
+/* ----- Mobile Phones (≤ 600px) ----- */
+@media (max-width: 600px) {
+  .Mdmain {
+    padding: 40px 20px;
+    gap: 35px;
+  }
+
+  .Mdmsg {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .Mdmsg h3 {
+    font-size: 1.5rem;
+  }
+
+  .Mdmsg p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .Mdimg img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
 }
