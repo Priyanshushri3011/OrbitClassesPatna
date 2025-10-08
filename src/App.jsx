@@ -29,6 +29,7 @@ function App() {
    <WhyOrbitClasses/>
    <StudentFeedback/>
    <CourseSection/>
+   {/* <EventSection/> */}
    <ContactUs/>
    <Footer/>
    

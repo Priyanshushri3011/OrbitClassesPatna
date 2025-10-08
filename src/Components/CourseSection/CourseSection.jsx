@@ -3,24 +3,31 @@ import "./CourseSection.css";
 
 function CourseSection() {
   const courses = [
-    { id: 1, name: "11th & 12th" },
-    { id: 2, name: "11th Foundation" },
-    { id: 3, name: "JEE-Main" },
-    { id: 4, name: "NEET" },
+    { title: "Foundation Course", description: "Strengthen your basics for Class 11th & 12th with in-depth conceptual learning and regular assessments." },
+    { title: "Target Board Exams", description: "Master your board syllabus with focused preparation, revision classes, and expert guidance." },
+    { title: "Dropper Batch for NEET", description: "Specialized batch for NEET droppers focusing on speed, accuracy, and exam-oriented strategy." },
+    { title: "Dropper Batch for JEE", description: "Exclusive program for JEE droppers to improve problem-solving and advanced concept mastery." },
+    { title: "Target Batch for NDA", description: "Focused preparation for NDA aspirants with academic and personality development support." },
+    { title: "Crash Course", description: "Fast-track revision course with intensive practice sessions and short-cut techniques." },
+    { title: "Test Series", description: "Regular tests, performance analysis, and personalized feedback to boost confidence and accuracy." },
   ];
 
   return (
-    <div className="courses-section">
-      <h2>Our Courses</h2>
-      <div className="courses-container">
-        {courses.map((course) => (
-          <div key={course.id} className="course-card">
-            <h3>{course.name}</h3>
-            <button className="explore-btn">Explore</button>
+    <section className="course-section" id="courses">
+      <h2 className="course-heading">Our Courses</h2>
+
+      <div className="course-grid">
+        {courses.map((course, index) => (
+          <div className="course-card" key={index}>
+            <div className="course-content">
+              <h3>{course.title}</h3>
+              <p>{course.description}</p>
+              <button className="explore-btn">Explore</button>
+            </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
